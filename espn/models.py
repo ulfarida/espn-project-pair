@@ -48,14 +48,14 @@ class Team(models.Model):
     #pass
 
     def __str__(self):
-        return (f"{self.team_abbr} {self.team_name}")
+        return ("{0} {1}".format(self.team_abbr, self.team_name))
 
 class Detail(models.Model):
     berita_id = models.ForeignKey(Berita, on_delete=models.CASCADE)
     team_id = models.ForeignKey(Team, on_delete=models.CASCADE)
 
     def __str__(self):
-        return (f"Berita ID: {self.berita_id} Team ID: {self.team_id}")
+        return ("Berita ID: int({0}) Team ID: int({1})".format(self.berita_id, self.team_id))
 
 class Match(models.Model):
     sport = models.CharField(max_length=11, choices=SPORT)
@@ -67,5 +67,5 @@ class Match(models.Model):
     done = models.IntegerField()
 
     def __str__(self):
-        return (f"{self.takes_time}    {self.home_team_id}    {self.ht_score} -- {self.at_score}    {self.away_team_id}")
+        return ("{0}    {1}    {2} -- {3}    {4}".format(self.takes_time, self.home_team_id, self.ht_score, self.at_score, self.away_team_id))
     #pass
