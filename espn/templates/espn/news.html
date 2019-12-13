@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+News Details
+{% endblock %}
+
+{% block section %}
+<div class="container-fluid home">
+    <div class="row">
+        <div class="col-md-3 news-detail">
+            {% for berita in beritas %}
+            <div class="judul-berita">
+                <h6><a href="{% url 'espn:news' berita.sport berita.id %}">{{berita.judul}}</a></h6>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-9">
+            <div class="news-detail">        
+                <h2>{{baru.judul}}</h2>
+                {{baru.createdat}}
+                <img src="{{baru.media}}" alt="">
+                <div class="content-detail">
+                    <p>{{baru.content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

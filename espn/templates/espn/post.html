@@ -1,0 +1,5 @@
+<form action="{% url 'espn:post_article'  %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Post</button>
+</form>

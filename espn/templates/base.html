@@ -1,0 +1,327 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'espn/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'espn/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container-fluid header-espn">
+            <div class="row align-items-center">
+                <div class="col-md-2 alpha-tech">
+                    <a href="{% url 'espn:index' %}"><img src="https://diskingdom.com/wp-content/uploads/2016/01/image-39.png" alt=""></a>
+                </div>
+                <div class="col-md-7">
+                    <div class="home-header-nav">
+                        <ul class="list-unstyled home-header-nav__list">
+                           <li>
+                                <div class="dropdown">
+                                    <a href= "{% url 'espn:sport' 'Football' %}" class="dropbtn">Football</a>
+                                    <div class="dropdown-content">
+                                    <a href="{% url 'espn:scores' 'Football' %}">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href= "{% url 'espn:sport' 'NBA' %}" class="dropbtn">NBA</a>
+                                    <div class="dropdown-content">
+                                    <a href="{% url 'espn:scores' 'NBA' %}">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href= "{% url 'espn:sport' 'NFL' %}" class="dropbtn">NFL</a>
+                                    <div class="dropdown-content">
+                                    <a href="{% url 'espn:scores' 'NFL' %}">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href= "#" class="dropbtn">Cricket</a>
+                                    <div class="dropdown-content">
+                                    <a href="#">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href= "#" class="dropbtn">Rugby</a>
+                                    <div class="dropdown-content">
+                                    <a href="#">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href= "#" class="dropbtn">Golf</a>
+                                    <div class="dropdown-content">
+                                    <a href="#">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href= "#" class="dropbtn titik">...</a>
+                                    <div class="dropdown-content">
+                                    <a href="#">Scores</a>
+                                    <a href="#">Fixture</a>
+                                    <a href="#">Transfers</a>
+                                    <a href="#">Teams</a>
+                                    <a href="#">League & Cups</a>
+                                    <a href="#">Tables</a>
+                                    <a href="#">Fantasy</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-header-nav">
+                        <ul class="list-unstyled home-header-nav__list">
+                            <li><a href="#">Fantasy</a></li>
+                            <li><a class="dots" href="#"><img src="http://puzzlefry.com/wp-content/uploads/2016/04/Dots-and-Lines-puzzles.png" alt=""></a></li>
+                            <li><a href="#"><img src="https://www.jateng.tv/wp-content/uploads/2019/04/87-872187_lupa-search-icon-white-png.png-copy.png" alt=""></a></li>
+                            <li><a href="#"><img src="https://www.stickpng.com/assets/images/585e4beacb11b227491c3399.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="content-section">
+            {% block section %}
+            {% endblock %}
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row foot">
+                <div class="col-md-3 left follow-foot">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled ">
+                        <!-- <li>Premiere League</li> -->
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://i.pinimg.com/originals/eb/83/d1/eb83d147be7b1ccfbe98247d009b3e8d.png" alt=""></li>
+                                <li><p><a href="#">Premiere League</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://cdn3.vectorstock.com/i/1000x1000/19/07/fantasy-basketball-sports-logo-emblem-vector-20231907.jpg" alt=""></li>
+                                <li><p><a href="#">Fantasy Basketball</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://images-na.ssl-images-amazon.com/images/I/417Z5QI8wwL._SY355_.png" alt=""></li>
+                                <li><p><a href="#">ESPN CricInfo</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://moneyinc.com/wp-content/uploads/2019/05/New-NBA-Logo-1.png" alt=""></li>
+                                <li><p><a href="#">NBA Trade Machine</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx5MogUT3Vz18GnxbTtpm6ALUITNW7vcbDXKS2Efz1FcXXLWdZ&s" alt=""></li>
+                                <li><p><a href="#">College Bowl Schedule</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://cdn1.vectorstock.com/i/1000x1000/46/55/talk-show-podcast-icon-and-logo-vector-11644655.jpg" alt=""></li>
+                                <li><p><a href="#">ESPN Daily Podcast</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png" alt=""></li>
+                                <li><p><a href="#">NFL Playoff Machine</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://moneyinc.com/wp-content/uploads/2019/05/New-NBA-Logo-1.png" alt=""></li>
+                                <li><p><a href="#">NBA Trade Machine</a></p></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-2 left follow-foot">
+                    <h6>Editions</h6>
+                    <ul class="list-unstyled follow">
+                        <li>
+                            <select>
+                                <option value="volvo">Select Edition</option>
+                                <option value="saab">Africa</option>
+                                <option value="opel">Argentina</option>
+                                <option value="audi">Australia</option>
+                                <option value="audi">Brazil</option>
+                                <option value="audi">Chile</option>
+                                <option value="audi">Colombia</option>
+                                <option value="audi">Deportes</option>
+                                <option value="audi">India</option>
+                                <option value="audi">Mexico</option>
+                                <option value="audi">Philippines</option>
+                                <option value="audi">U.S.</option>
+                                <option value="audi">Venezuela</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 left follow-foot">
+                    <h6>ESPN Sites</h6>
+                    <ul class="list-unstyled follow">
+                        <li>
+                            <p><a href="#">ESPN Deportes</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">The Undefeated</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">espnW</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">ESPNFC</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">X Games</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">SEC Network</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 left follow-foot">
+                    <h6>ESPN Apps</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1280px-ESPN_wordmark.svg.png" alt=""></li>
+                                <li><p><a href="#">ESPN</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://i.pinimg.com/originals/6e/30/ea/6e30ea0b9505c2bb6c506d0c80fdc1f3.png" alt=""></li>
+                                <li><p><a href="#">ESPN Fantasy</a></p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 left follow-foot">
+                    <h6>Follow ESPN</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://lh6.googleusercontent.com/proxy/i7qQ2MAClfmtAib-xTNGEQIddyKTu5paY_YaVRm1vw1o0GDHP9KpOIFNkvslWusbFud5uBcPtP7IsrSwuDhgRy9yV106K5l9OJgdEs8WKJp4ycuNAAzueeSNrnoi236wg799yii3c6H8s7gVBYStkko=s0-d" alt=""></li>
+                                <li><p><a href="#">Facebook</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://upload.wikimedia.org/wikipedia/id/thumb/9/9f/Twitter_bird_logo_2012.svg/944px-Twitter_bird_logo_2012.svg.png" alt=""></li>
+                                <li><p><a href="#">Twitter</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://image.flaticon.com/icons/svg/87/87390.svg" alt=""></li>
+                                <li><p><a href="#">Instagram</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://seeklogo.com/images/S/snapchat-logo-47531E7AE8-seeklogo.com.png" alt=""></li>
+                                <li><p><a href="#">Snapchat</a></p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled follow">
+                                <li><img src="https://wvuimc.files.wordpress.com/2014/06/youtube.png" alt=""></li>
+                                <li><p><a href="#">Youtube</a></p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+      
+            </div>
+            <div class="row foot">
+                <div class="col-md-2 logo-espn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1280px-ESPN_wordmark.svg.png" alt="">
+                </div>
+            
+                <div class="col-md-9 ">
+                    <div class="row">
+                        <ul class="list-unstyled foot-2">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">CA Privacy Rights</a></li>
+                            <li><a href="#">Children's Online Privacy Policy</a></li>
+                            <li><a href="#">Interest-based Ads</a></li>
+                            <li><a href="#">About Nielsen Measurement</a></li>
+                        </ul>
+                    </div>
+                    <div class="row copyright">
+                        <p>© 2019 ESPN Enterprises, Inc. All rights reserved. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="{% static 'espn/js/bootstrap.min.js' %}"></script> -->
+</body>
+</html>

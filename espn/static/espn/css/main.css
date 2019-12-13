@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+/*     
+=============================================
+====================HOME=====================    
+============================================= */
+
+body {
+    position: relative;
+}
+
+/* ==================================
+==============HEADER==============
+================================== */
+
+header {https://i7.pngguru.com/preview/262/743/679/social-media-computer-icons-snapchat-logo-snap-inc-snapchat-cliparts.jpg;
+    width: 100%;
+    box-shadow: 0px 3px 6px #C1C3C736;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    padding-left: 0;
+    height: 42px;
+}
+
+.alpha-tech a img {
+    height: 100%;
+    width: 120px;
+}
+
+.header-espn {
+    padding-left: 0 !important;
+}
+
+.home-header-nav {
+    display: table;
+}
+
+.home-header-nav__list {
+    margin-bottom: 0px;
+}
+
+.home-header-nav__list li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: 'Roboto'; 
+    margin-right: 0;
+}
+
+.home-header-nav__list li a {
+    padding: 0 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: medium;
+}
+
+.home-header-nav__list .titik{
+    font-weight: bold;
+}
+
+.home-header-nav__list li a img {
+    height: 28px;
+}
+
+.home-header-nav__list .dots img {
+    height: 20px;
+}
+
+/* =====================================
+================home=================
+===================================== */
+
+.foot {
+    background-color: white;
+    border-bottom: 1px solid #ececec;
+}
+
+.follow-foot h6{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px #ececec solid;
+}
+
+footer {
+    padding-bottom: 0 !important;
+    padding: 30px;
+    background-color: #ececec;
+}
+
+.logo-espn {
+    border-right: 1px solid #ececec;
+}
+
+.logo-espn img {
+    width: 50%;
+}
+
+.foot-2 li {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.copyright p {
+    margin-left: 15px;
+    color: grey;
+    font-size: 13px;;
+}
+/* =====================================
+================home=================
+===================================== */
+
+.content-section {
+    padding-top: 42px;
+}
+
+.home {
+    background-color: #ececec;
+}
+
+.left {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.left ul li p a {
+    text-decoration: none;
+    color: black;
+}
+
+.left ul li p a:hover {
+    color: blue;
+}
+
+.left ul li h6 {
+    margin-bottom: 20px;
+}
+
+.follow li {
+    display: inline-block
+}
+
+.follow li img {
+    width: 25px;
+}
+
+.follow {
+    font-size: 13px;
+    text-align: bottom;
+}
+
+.quick-links h6 {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.quick-links ul li p {
+    font-size: 13px;
+    text-align: bottom;
+}
+
+
+.list-berita {
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.list-berita-head {
+    /* text-decoration: none; */
+    color: black;
+}
+
+.list-berita-head:hover {
+    color: blue;
+}
+
+.list-berita-border {
+    border: 1px solid #ececec;
+    border-radius: 10px;  
+    box-shadow: 0px 3px 6px #C1C3C736; 
+}
+
+.list-berita img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.list-berita ul li {
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.list-berita ul li a {
+    text-decoration: none;
+}
+
+.list-berita h4 {
+    margin-top: 10px;
+}
+
+.list-berita h4 a {
+    color: black;
+    text-decoration: none;
+}
+
+.list-berita h4 a:hover {
+    color: rgb(28, 145, 255);
+    /* transition-delay: 0.5s ease; */
+}
+
+.top-news {
+    display: inline-block;
+}
+
+.top-news h5{
+    font-size: 18px;
+}
+
+.login ul li {
+    border: 1px solid blue;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* 
+================================
+=============SCORES=============
+================================ */
+
+.score {
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.score h4 {
+    margin-bottom: 30px;
+}
+
+.score-board {
+    background-color: white;
+    /* margin: 8px; */
+    height: 150px;
+    border: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+
+
+.tim-a {
+    text-align: right;
+}
+
+.tim-b {
+    text-align: left;
+}
+
+.tim ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.tim ul li img {
+   height: 40px;; 
+}
+
+.ft{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.summary {
+    border-left: 1px solid #ececec;
+    height: 110px;
+}
+
+.match {
+    padding-top: 20px;
+}
+
+.summary ul li a{
+    
+    text-decoration: none;
+}
+
+.summary ul li {
+    border: 1px solid blue;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* 
+
+===========================
+===========NEWS============
+=========================== */
+
+
+.news-detail {
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.news-detail img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.content-detail {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content-detail p {
+    color: darkslategrey;
+}
+
+.judul-berita {
+    margin-bottom: 20px;
+}
+
+.judul-berita h6 a {
+    text-decoration: none;
+    color: black;
+}
+
+.judul-berita h6 a:hover {
+    color: blue;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+    width: 250px;
+  }
+  
+  .dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+  }
+  
+  .dropdown-content a:hover {background-color: #ececec}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

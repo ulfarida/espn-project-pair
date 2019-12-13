@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Score
+{% endblock %}
+
+{% block section %}
+<div class="container-fluid home">
+    <div class="row">
+        <div class="col-md-10 score">
+            <h4>{{sportstr}} Score</h4>
+            {% for match in matchs %}
+                <div class="score-board">
+                    <div class="row match">
+                        <div class="col-md-4 tim tim-a">
+                            <ul class="list-unstyled">
+                                <li><h6>{{match.i.home_team_id}}</h6></li>
+                                <li><img src="{{match.h}}" alt=""></li>
+                                <li><h6>{{match.i.ht_score}}</h6></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1 tim ft">
+                            <h6>FT</h6>
+                        </div>
+                        <div class="col-md-4 tim tim-b">
+                            <ul class="list-unstyled">
+                                <li style="margin-left: 0;"><h6>{{match.i.at_score}}</h6></li>
+                                <li><img src="{{match.a}}" alt=""></li>
+                                <li><h6>{{match.i.away_team_id}}</h6></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 summary">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Summary</a></li>
+                                <li><a href="#">Highlights</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <!-- <div class="score-board">
+                <div class="row match">
+                    <div class="col-md-4 tim">
+                        <ul class="list-unstyled">
+                            <li><h4>Tim A</h4></li>
+                            <li><img src="https://seeklogo.com/images/S/snapchat-logo-47531E7AE8-seeklogo.com.png" alt=""></li>
+                            <li><h3>1</h3></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 tim ft">
+                        <h6>FT</h6>
+                    </div>
+                    <div class="col-md-4 tim">
+                        <ul class="list-unstyled">
+                            <li><h3>2</h3></li>
+                            <li><img src="https://seeklogo.com/images/S/snapchat-logo-47531E7AE8-seeklogo.com.png" alt=""></li>
+                            <li><h4>Tim B</h4></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 summary">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Summary</a></li>
+                            <li><a href="#">Highlights</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}
