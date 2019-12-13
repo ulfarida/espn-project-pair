@@ -55,3 +55,6 @@ def scores(request, sportstr):
         replace.append(dict_ref)
     var = {'matchs' : replace,'sportstr':sportstr}
     return render(request, 'espn/score.html', var)
+
+def download(request):
+    render(request, 'espn/link_download_laporan.html',{})
