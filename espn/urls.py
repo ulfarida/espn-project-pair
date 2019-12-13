@@ -13,6 +13,7 @@ urlpatterns = [
     # path('football/<slug:foo>', views.footballitem, name='footballitem'),
     path('<str:sportstr>/scoreboard', views.scores, name='scores'),
     path('<str:sportstr>/<int:new_id>', views.news , name='news'),
+    path('download', views.download, name='download'),
     path('<str:sportstr>', views.sport , name='sport'),
 
     path('<str:bar>/<int:foo>', views.peritem , name='peritem'),
